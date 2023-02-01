@@ -1,0 +1,60 @@
+:root {
+  --black1: #121212;
+  --black2: #093329;
+  --black3: #021933;
+  --blackH: #0b131f;
+  --white1: #ffffff;
+  --white2: #EEEEEE;
+}
+
+body {
+    background-color: var(--blackH);
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  img {
+    max-width: 60%;
+    margin: auto;
+    transition: transform 0.5s;
+  }
+
+  img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  h2 {
+      color: var(--white1);
+      font-family: 'Montserrat', sans-serif; /*Essas fontes não estão legais*/
+      font-weight: 500;
+      font-size: 30px;
+      position: relative;
+      top: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    h2 {
+      font-size: 20px;
+      position: relative;
+      top: 20px;
+    }
+
+    img {
+      max-width: 30%;
+    }
+  }
+
+  
